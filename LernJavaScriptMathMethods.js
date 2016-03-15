@@ -8,3 +8,21 @@ Math.divide = function (argument1, argument2)
 }
 else
 	return 0;
+
+//Функция возведения в степень
+
+Math.pow = function (base, exponent)
+{
+	if(base is Number(Object) && exponent is Number(Object) && base === 0 || exponent ===0)
+	{
+		console.log ("Exception");
+		return 0;
+	}
+	else var result = base;
+	{
+		for (var i = 1; i < exponent; i++) 
+		{
+			result *= base;
+		}
+	} return result;
+}
