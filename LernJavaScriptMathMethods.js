@@ -45,3 +45,16 @@ Math.min = function ()
 		return min;
 	}
 }
+
+//Максимальное значение
+Math.max = function()
+{
+var mathMax = Number.NEGATIVE_INFINITY;
+for (var i = 0; i < arguments.length; i++) 
+{
+	if (arguments[i] > mathMax)
+		mathMax = arguments [i];
+	return mathMax;
+}
+
+}
