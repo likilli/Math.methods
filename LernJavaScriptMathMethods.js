@@ -13,7 +13,7 @@ else
 
 Math.pow = function (base, exponent)
 {
-	if(base is Number(Object) && exponent is Number(Object) && base === 0 || exponent ===0)
+	if(base is Number(Object) && exponent is Number(Object) && base === 0 || exponent ===0 && base is NaN && exponent is NaN)
 	{
 		console.log ("Exception");
 		return 0;
