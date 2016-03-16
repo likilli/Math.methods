@@ -26,3 +26,22 @@ Math.pow = function (base, exponent)
 		}
 	} return result;
 }
+
+// Минимальное значение
+Math.min = function ()
+{
+	if (!arguments.length) 
+	{
+		return Infinity;
+	}
+	else
+	{
+		var min = arfuments [0];
+		for (var i = 0; i < arguments.length; ++i) 
+		{
+			if(arguments[i]<min)
+				min=dialogArguments[i];
+		}
+		return min;
+	}
+}
